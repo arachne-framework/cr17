@@ -1,10 +1,12 @@
 # cr17
 
-An Arachne application with the following basic stack:
+The demo application template for Clojure West 2017
+
+Uses the following stack:
 
 - Leiningen
-- Datomic Pro
-- Logback logging
+- DataScript
+- Logging with Logback
 - ClojureScript
 - Figwheel
 - Rum
