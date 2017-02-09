@@ -1,4 +1,4 @@
-# cr17
+# clojure-remote
 
 The demo application template for Clojure West 2017
 

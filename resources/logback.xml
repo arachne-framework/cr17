@@ -7,9 +7,9 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>log/cr17.log</file>
+        <file>log/clojure-remote.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>cr17.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>clojure-remote.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
             <!--<totalSizeCap>1GB</totalSizeCap>-->
         </rollingPolicy>

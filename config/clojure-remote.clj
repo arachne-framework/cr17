@@ -7,7 +7,7 @@
 (require '[arachne.figwheel.dsl :as fig])
 
 ;; Make things shorter to type...
-(alias 'app 'org.arachne-framework.template.cr17)
+(alias 'app 'org.arachne-framework.template.clojure-remote)
 
 ;; Always in dev mode, for now
 (def dev? (constantly true))
@@ -19,7 +19,7 @@
 
 ;; System components
 (a/component ::app/robohash
-  'org.arachne-framework.template.cr17.visual-hash/new-robohash)
+  'org.arachne-framework.template.clojure-remote.visual-hash/new-robohash)
 
 ;; HTTP Server setup
 (p/server ::app/server 8080
@@ -27,15 +27,15 @@
   (pa/interceptor ::app/asset-interceptor :index? true)
 
   (h/endpoint :get "/healthcheck"
-    (h/handler 'org.arachne-framework.template.cr17.web/healthcheck))
+    (h/handler 'org.arachne-framework.template.clojure-remote.web/healthcheck))
 
   (h/endpoint :get "/robot/:name"
-    (h/handler 'org.arachne-framework.template.cr17.web/robot {:vhash ::app/robohash}))
+    (h/handler 'org.arachne-framework.template.clojure-remote.web/robot {:vhash ::app/robohash}))
 
   )
 
 ;; ClojureScript setup
-(def cljs-opts {:main 'org.arachne-framework.template.cr17
+(def cljs-opts {:main 'org.arachne-framework.template.clojure-remote
                 :optimizations (if (dev?) :none :advanced)
                 :asset-path "js/out"
                 :output-to "js/app.js"

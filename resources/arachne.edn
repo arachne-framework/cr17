@@ -1,4 +1,4 @@
-[{:arachne/name :org.arachne-framework.template/cr17
-  :arachne/inits ["config/cr17.clj"]
+[{:arachne/name :org.arachne-framework.template/clojure-remote
+  :arachne/inits ["config/clojure-remote.clj"]
   :arachne/dependencies [:org.arachne-framework/pedestal-assets
                          :org.arachne-framework/arachne-figwheel]}]

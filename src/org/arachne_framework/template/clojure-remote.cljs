@@ -1,4 +1,4 @@
-(ns org.arachne-framework.template.cr17
+(ns org.arachne-framework.template.clojure-remote
   (:require [rum.core :as rum]))
 
 (rum/defc hello [text]

@@ -1,4 +1,4 @@
-(defproject org.arachne-framework.template/cr17 "0.1.0-SNAPSHOT"
+(defproject org.arachne-framework.template/clojure-remote "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.9.0-alpha14"]
 
                  [org.arachne-framework/pedestal-assets "0.1.0-master-0006-46abdf0"]

@@ -1,5 +1,5 @@
-(ns org.arachne-framework.template.cr17.web
-  (:require [org.arachne-framework.template.cr17.visual-hash :refer [vhash]]))
+(ns org.arachne-framework.template.clojure-remote.web
+  (:require [org.arachne-framework.template.clojure-remote.visual-hash :refer [vhash]]))
 
 (defn healthcheck
   [req]
