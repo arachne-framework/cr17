@@ -1,4 +1,4 @@
-(ns org.arachne-framework.cr17.visual-hash
+(ns org.arachne-framework.template.cr17.visual-hash
   (:import [java.net URL]))
 
 (defprotocol VisualHash

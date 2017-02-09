@@ -1,4 +1,4 @@
-(ns org.arachne-framework.cr17
+(ns org.arachne-framework.template.cr17
   (:require [rum.core :as rum]))
 
 (rum/defc hello [text]

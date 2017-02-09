@@ -23,7 +23,7 @@
       <appender-ref ref="FILE"/>
     </root>
 
-    <logger name="org.arachne-framework" level="DEBUG">
+    <logger name="org.arachne-framework.template" level="DEBUG">
         <appender-ref ref="STDOUT" />
     </logger>
 
