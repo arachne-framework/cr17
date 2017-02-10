@@ -17,10 +17,6 @@
   (a/runtime ::app/runtime [::app/figwheel ::app/server])
   (a/runtime ::app/runtime [::app/server]))
 
-;; System components
-(a/component ::app/robohash
-  'org.arachne-framework.template.clojure-remote.visual-hash/new-robohash)
-
 ;; HTTP Server setup
 (p/server ::app/server 8080
 
@@ -28,9 +24,6 @@
 
   (h/endpoint :get "/healthcheck"
     (h/handler 'org.arachne-framework.template.clojure-remote.web/healthcheck))
-
-  (h/endpoint :get "/robot/:name"
-    (h/handler 'org.arachne-framework.template.clojure-remote.web/robot {:vhash ::app/robohash}))
 
   )
 
